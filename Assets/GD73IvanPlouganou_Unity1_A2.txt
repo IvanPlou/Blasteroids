@@ -1,0 +1,14 @@
+Blasteroids (Unity1_A2)
+
+Controls:
+Move forward: W / Up Arrow
+Move back: S / Down Arrow
+Move right: D / Right Arrow
+Move left: A / Left Arrow
+Aim: Move mouse
+Shoot Laser: Mouse left click
+Shoot Scatter Gun: Mouse right click
+
+New feature: 
+Electric Cannon: Mouse wheel (middle button) --> Bigger projectile that rotates and makes a differnt sound effect.
+Cooldown and rotation adjustable in the editor. 
