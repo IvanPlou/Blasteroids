@@ -4,11 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-//This code is not finished and currently not working.
-public class Score
+public static class Score
 {
-    static int _score;
-    //[SerializeField] static TextMeshProUGUI scoreUI;
+    private static int _score;
 
     public static Action<int> OnAddScoreEvent;
 
@@ -16,8 +14,7 @@ public class Score
     {
         _score += amount;
         OnAddScoreEvent?.Invoke(_score);
-        //scoreUI.text = $"Score: {_score.ToString()}";
     }
 
-    public void ResetScore() {_score = 0;}
+    public static void ResetScore() {_score = 0;}
 }

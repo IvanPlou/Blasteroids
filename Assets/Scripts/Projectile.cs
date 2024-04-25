@@ -6,12 +6,12 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     //Editable parameters on the inspector.
-    [SerializeField] private float _speed = 20f;
-    [SerializeField] private float _speed2 = 20f;
-    [SerializeField] private float _lifetime = 0f;
-    [SerializeField] private float _rotationSpeed = 0f;
+    [SerializeField] protected float _speed = 20f;
+    [SerializeField] protected float _speed2 = 20f;
+    [SerializeField] protected float _lifetime = 0f;
+    [SerializeField] protected float _rotationSpeed = 0f;
 
-    private Rigidbody _rb;
+    protected Rigidbody _rb;
 
     //Gets the rigid body (what handles physics) of the projectile and adds a forward (z axis) force with an adjustable parameter. Sets lifetime of the object to an adjustable parameter.
     protected virtual void Start()

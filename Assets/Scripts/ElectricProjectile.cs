@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class ElectricProjectile : Projectile
 {
-    // variables editeable in the inspector.
-    [SerializeField] private float _speed = 20f;
-    [SerializeField] private float _lifetime = 0f;
-    [SerializeField] private float _rotationSpeed = 0f;
-
-    private Rigidbody _rb;
 
     // Overrides the standard Projectile Start Method to change the rotation be fixed in x and y axis and adjustable in z axis.
     protected virtual void Start()
