@@ -42,7 +42,7 @@ public class AsteroidSpawn : MonoBehaviour
         }
     }
 
-    //Draws debug gizmos to see the spawn position and radius, the target position and radius (to which the asteroids are going to be sent.
+    //Draws debug gizmos to see the spawn position and radius, the target position and radius (to which the asteroids are going to be sent).
     private void OnDrawGizmos()
     {
         if (_target == null)

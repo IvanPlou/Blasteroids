@@ -13,7 +13,7 @@ public class DamageOnCollision : MonoBehaviour
     {
         //If the tag of the object coincides with the tag inputed on the string field in the inspector, gets the object's health and applies health reduction method.
         // Destroys the projectile after collision.
-        if(other.tag == _tagToDamage)
+        if(other.CompareTag(_tagToDamage))
         {
             Health health = other.GetComponent<Health>();
             if(health != null )
